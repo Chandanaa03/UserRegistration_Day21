@@ -123,6 +123,21 @@ namespace UserRegistration
                 Console.WriteLine(e.Message);
             }
         }
+        public void validateSpecialCharacter(string SpecialCharacter)
+        {
+            try
+            {
+                string stringForNumericPassword = "^(?=.*[a-z])(?=.*[A-Z])(?=.*)(?=.*[^a-zA-Z]).{8,15}$";
+                if (Regex.IsMatch(SpecialCharacter, stringForNumericPassword))
+                    Console.WriteLine(SpecialCharacter + " is Valid");
+                else
+                    Console.WriteLine(SpecialCharacter + " is Invalid");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
       

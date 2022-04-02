@@ -19,6 +19,8 @@ namespace UserRegistration
             Console.WriteLine("--------------------------------------");
             validateUser.validateUpperCasePassword("Chandana");
             Console.WriteLine("--------------------------------------");
+            validateUser.validateNumericPassword("Chandana@123");
+            Console.WriteLine("--------------------------------------");
             Console.ReadKey();
         }
     }

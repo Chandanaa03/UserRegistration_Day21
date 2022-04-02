@@ -11,6 +11,8 @@ namespace UserRegistration
             Console.WriteLine("--------------------------------------");
             validateUser.validateLastName("Reddy");
             Console.WriteLine("--------------------------------------");
+            validateUser.validateEmailId("chandana@gmail.com");
+            Console.WriteLine("--------------------------------------");
             Console.ReadKey();
         }
     }

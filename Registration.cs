@@ -92,6 +92,22 @@ namespace UserRegistration
                 Console.WriteLine(e.Message);
             }
         }
+        //Rule:2
+        public void validateUpperCasePassword(string UCPassword)
+        {
+            string stringForUCPassword = "^[A-Z]+.{8,}?";
+            try
+            {
+                if (Regex.IsMatch(UCPassword, stringForUCPassword))
+                    Console.WriteLine(UCPassword + " is Valid");
+                else
+                    Console.WriteLine(UCPassword + " is Invalid");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
       

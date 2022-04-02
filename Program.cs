@@ -21,6 +21,8 @@ namespace UserRegistration
             Console.WriteLine("--------------------------------------");
             validateUser.validateNumericPassword("Chandana@123");
             Console.WriteLine("--------------------------------------");
+            validateUser.validateSpecialCharacter("chandana@123");
+            Console.WriteLine("--------------------------------------");
             Console.ReadKey();
         }
     }

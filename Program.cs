@@ -15,6 +15,8 @@ namespace UserRegistration
             Console.WriteLine("--------------------------------------");
             validateUser.validateMobileNumber("917893338629");
             Console.WriteLine("--------------------------------------");
+            validateUser.validatePassword("chandu");
+            Console.WriteLine("--------------------------------------");
             Console.ReadKey();
         }
     }

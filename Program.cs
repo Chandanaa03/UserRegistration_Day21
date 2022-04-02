@@ -13,6 +13,8 @@ namespace UserRegistration
             Console.WriteLine("--------------------------------------");
             validateUser.validateEmailId("chandana@gmail.com");
             Console.WriteLine("--------------------------------------");
+            validateUser.validateMobileNumber("917893338629");
+            Console.WriteLine("--------------------------------------");
             Console.ReadKey();
         }
     }

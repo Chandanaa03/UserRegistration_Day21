@@ -44,6 +44,22 @@ namespace UserRegistration
                 Console.WriteLine(e.Message);
             }
         }
+        public void validateEmailId(string emailID)
+        {
+            string stringForEmailId = "^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,5}$";
+            try
+            {
+
+                if (Regex.IsMatch(emailID, stringForEmailId))
+                    Console.WriteLine(emailID + " is Valid");
+                else
+                    Console.WriteLine(emailID + " is Invalid");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
       
